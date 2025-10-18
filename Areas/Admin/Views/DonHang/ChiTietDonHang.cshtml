@@ -1,0 +1,109 @@
+﻿@model NgocHiepCeilingFans.Models.DonHang
+
+@{
+    ViewData["Title"] = "Chi Tiết Đơn Hàng Admin";
+	Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>Chi Tiết Đơn Hàng #@Model.Id</h2>
+
+    @if (TempData["Loi"] != null)
+    {
+        <div class="alert alert-danger" role="alert">@TempData["Loi"]</div>
+    }
+    @if (TempData["ThanhCong"] != null)
+    {
+        <div class="alert alert-success" role="alert">@TempData["ThanhCong"]</div>
+    }
+
+    <div class="mb-3">
+        <h4>Thông Tin Đơn Hàng</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-3">Mã Đơn Hàng:</dt>
+            <dd class="col-sm-9">@Model.Id</dd>
+
+            <dt class="col-sm-3">Người Đặt:</dt>
+            <dd class="col-sm-9">@Model.HoTen</dd>
+
+            <dt class="col-sm-3">Số Điện Thoại:</dt>
+            <dd class="col-sm-9">@Model.SoDienThoai</dd>
+
+            <dt class="col-sm-3">Địa Chỉ:</dt>
+            <dd class="col-sm-9">@Model.DiaChi</dd>
+
+            <dt class="col-sm-3">Phương Thức Thanh Toán:</dt>
+            <dd class="col-sm-9">@Model.PhuongThucThanhToan</dd>
+
+            <dt class="col-sm-3">Ngày Đặt:</dt>
+            <dd class="col-sm-9">@Model.NgayDat.ToString("dd/MM/yyyy HH:mm")</dd>
+
+            <dt class="col-sm-3">Trạng Thái:</dt>
+            <dd class="col-sm-9">@Model.TrangThai</dd>
+
+            <dt class="col-sm-3">Tổng Tiền:</dt>
+            <dd class="col-sm-9"><strong>@Model.TongTien.ToString("N0") VNĐ</strong></dd>
+        </dl>
+    </div>
+
+    <h4 class="mt-4">Sản Phẩm Trong Đơn Hàng</h4>
+    <hr />
+    @if (Model.ChiTietDonHang != null && Model.ChiTietDonHang.Any())
+    {
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Ảnh</th>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Giá Đơn Vị</th>
+                    <th>Số Lượng</th>
+                    <th>Thành Tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.ChiTietDonHang)
+                {
+                    <tr>
+                        <td class="align-middle">
+                            @{
+                                string imageUrl = string.Empty;
+                                if (item.SanPham != null && !string.IsNullOrEmpty(item.SanPham.HinhAnh))
+                                {
+                                    imageUrl = item.SanPham.HinhAnh;
+                                }
+                                else if (!string.IsNullOrEmpty(item.HinhAnh))
+                                {
+                                    imageUrl = item.HinhAnh;
+                                }
+                            }
+
+                            @if (!string.IsNullOrEmpty(imageUrl))
+                            {
+                                <img src="@imageUrl" alt="@item.TenSanPham" class="img-thumbnail" style="width: 80px; height: 80px; object-fit: cover;" />
+                            }
+                            else
+                            {
+                                <img src="~/images/noimage.png" alt="No Image" class="img-thumbnail" style="width: 80px; height: 80px; object-fit: cover;" />
+                            }
+                        </td>
+                        <td class="align-middle">@item.TenSanPham</td>
+                        <td class="align-middle">@item.Gia.ToString("N0") VNĐ</td>
+                        <td class="align-middle">@item.SoLuong</td>
+                        <td class="align-middle">@((item.Gia * item.SoLuong).ToString("N0")) VNĐ</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p class="text-muted">Không có thông tin chi tiết sản phẩm nào cho đơn hàng này.</p>
+    }
+
+    <div class="d-flex justify-content-between align-items-center mt-3">
+        <a asp-action="Index" class="btn btn-secondary">Quay Lại Danh Sách Đơn Hàng</a>
+
+        <a asp-action="SuaTrangThai" asp-route-id="@Model.Id" class="btn btn-primary">Cập Nhật Trạng Thái</a>
+    </div>
+</div>

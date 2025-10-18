@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NgocHiepCeilingFans</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/NgocHiepCeilingFans.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/admin-tai-khoan.css" />
+    <link rel="stylesheet" href="~/css/san-pham.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/chi-tiet.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+    <style>
+        .sidebar {
+            height: calc(100vh - 56px); 
+            position: fixed;
+            top: 56px;
+            left: 0;
+            width: 250px;
+            background-color: #f8f9fa;
+            border-right: 1px solid #dee2e6;
+            z-index: 1028;
+            overflow-y: auto;
+        }
+
+            .sidebar .dropdown-menu {
+                display: block; 
+                position: static;
+                float: none;
+                box-shadow: none;
+                border: none;
+                padding-left: 20px;
+            }
+
+        .main-content {
+            margin-left: 250px;
+            padding-top: 56px;
+        }
+    </style>
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" style="z-index: 1030;">
+            <div class="container-fluid">
+                <a class="navbar-brand py-2" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo/Logo3.png" alt="NgocHiep Logo" class="img-fluid" style="max-height: 50px; object-fit: contain;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="SanPhams" asp-action="DanhSach">Sản phẩm của chúng tôi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="SanPham" asp-action="TheoPhongCach">Mua sắm theo phong cách</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="SanPham" asp-action="TheoThuongHieu">Mua sắm theo thương hiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="SanPham" asp-action="TheoThuongHieu">Liên hệ với chúng tôi</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownAccount" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person"></i> Xin chào @User.Identity.Name!
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAccount">
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="DonHang" asp-action="LichSuDatHang">Đơn hàng của bạn</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="TaiKhoan" asp-action="DangXuat">Đăng xuất</a></li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="TaiKhoan" asp-action="DangNhap">
+                                    <i class="bi bi-person"></i> Tài khoản
+                                </a>
+                            </li>
+                        }
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="GioHang" asp-action="Index">
+                                <i class="bi bi-cart"></i> Giỏ hàng
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="sidebar">
+        <ul class="nav flex-column">
+            <li class="nav-item dropdown">
+                <a class="nav-link text-dark" href="#" id="managementDropdown" role="button">
+                    <i class="bi bi-gear me-2"></i> Quản lý
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="managementDropdown">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark" href="#" id="orderManagementDropdown">
+                            Quản lý sản phẩm
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="orderManagementDropdown">
+                            <li><a class="dropdown-item text-dark" asp-area="Admin" asp-controller="SanPhams" asp-action="DanhSach">Danh sách sản phẩm</a></li>
+                            <li><a class="dropdown-item text-dark" asp-area="Admin" asp-controller="SanPhams" asp-action="ThemMoi">Thêm mới sản phẩm</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark" href="#" id="orderManagementDropdown">
+                            Quản lý tài khoản
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="orderManagementDropdown">
+                            <li><a class="dropdown-item text-dark" asp-area="Admin" asp-controller="TaiKhoan" asp-action="DanhSach">Danh sach tài khoản</a></li>
+                            <li><a class="dropdown-item text-dark" asp-area="Admin" asp-controller="TaiKhoan" asp-action="Danhsach">Gắn quyền Admin</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark" href="#" id="orderManagementDropdown">
+                            Quản lý đơn hàng
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="orderManagementDropdown">
+                            <li><a class="dropdown-item text-dark" href="/Admin/DonHang">Danh sách đơn hàng</a></li>
+                            <li><a class="dropdown-item text-dark" href="?trangThai=Chờ+Xử+Lý">Đơn chưa xử lý</a></li>
+                            <li><a class="dropdown-item text-dark" href="?trangThai=Đang+Xử+Lý ">Đơn đang xử lý</a></li>
+                            <li><a class="dropdown-item text-dark" href="?trangThai=Đang+Giao+Hàng" >Đơn đang giao</a></li>
+                            <li><a class="dropdown-item text-dark" href="?trangThai=Đã+Hoàn+Thành" >Đơn đã hoàn thành</a></li>
+                            <li><a class="dropdown-item text-dark" href="?trangThai=Đã+hủy" >Đơn bị hủy</a></li>
+                        </ul>
+                    </li>
+                  
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            @if (TempData["ThongBao"] != null)
+            {
+                <div class="alert alert-info alert-dismissible fade show mt-3" role="alert">
+                    @TempData["ThongBao"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,172 @@
+﻿@model NgocHiepCeilingFans.Models.SanPham
+
+@{
+    ViewData["Title"] = "Chi Tiết Sản Phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+
+    body {
+        margin-top: 160px;
+    }
+</style>
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-md-8 product-image-container">
+            @if (!string.IsNullOrEmpty(Model.HinhAnh))
+            {
+                <img src="@Model.HinhAnh" alt="@Model.TenSanPham" class="img-fluid mb-3" />
+            }
+            else
+            {
+                <p>Không có hình ảnh</p>
+            }
+            <div class="text-secondary-custom product-description-section">
+                <h5 class="text-dark">Mô tả sản phẩm</h5>
+                <div class="description-content">
+                    @Html.Raw(Model.MoTa)
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <h2 class="text-uppercase text-dark mb-2">@Model.TenSanPham</h2>
+
+            <p class="text-muted mb-2">Thương hiệu: @Model.ThuongHieu</p>
+
+            <h4 class="text-danger mb-3">
+                @if (Model.Gia > 0)
+                {
+                    <span class="old-price">@((Model.Gia * 1.2M).ToString("C", new System.Globalization.CultureInfo("vi-VN")))</span>
+                }
+                <span>@Model.Gia.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</span>
+            </h4>
+
+            <div class="mb-3 color-quantity-section">
+                <label class="form-label text-dark">Màu sắc:</label>
+                <select class="form-select" name="MauSac">
+                    <option value="@Model.MauSac" selected>@Model.MauSac</option>
+                </select>
+            </div>
+
+            <div class="mb-3 d-flex align-items-center color-quantity-section">
+                <label for="SoLuong" class="me-2 text-dark">Số lượng:</label>
+                <div class="input-group" style="width: 120px;">
+                    <button type="button" class="btn btn-outline-secondary input-group-text" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                    <input type="number" class="form-control text-center" id="SoLuong" name="SoLuong" value="1" min="1" max="@Model.SoLuongTon" />
+                    <button type="button" class="btn btn-outline-secondary input-group-text" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                </div>
+            </div>
+
+            <form asp-action="AddToCart" method="post">
+                <input type="hidden" name="MaSanPham" value="@Model.MaSanPham" />
+                <button type="submit" class="btn btn-warning w-100 mb-3">Thêm vào giỏ hàng</button>
+            </form>
+
+            ---
+            <div class="product-info-list mt-3">
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                         <span>Thương hiệu: <strong>@Model.ThuongHieu</strong></span>
+                    </li>
+                    <li class="mb-2">
+                        <span>Loại quạt: <strong>@Model.LoaiQuat</strong></span>
+                    </li>
+                    <li class="mb-2">
+                        <span>Số cánh: <strong>@Model.SoCanh</strong></span>
+                    </li>
+                    <li class="mb-2">
+                         <span>Màu sắc: <strong>@Model.MauSac</strong></span>
+                    </li>
+                    <li class="mb-2">
+                         <span>Có đèn: <strong>@(Model.CoDen ? "Có" : "Không")</strong></span>
+                    </li>
+                    <li class="mb-2">
+                         <span>Bảo hành: <strong>@Model.BaoHanh tháng</strong></span>
+                    </li>
+                    <li class="mb-2">
+                        <span>Số lượng tồn kho: <strong>@Model.SoLuongTon</strong></span>
+                    </li>
+                    <li class="mb-2">
+                        <span>Sản phẩm chính hãng.</span>
+                    </li>
+                    <li class="mb-2">
+                        <span>Giao hàng toàn quốc, miễn phí vận chuyển.</span>
+                    </li>
+                    <li class="mb-2"
+                        <span>Đổi trả miễn phí trong 7 ngày.</span>
+                    </li>
+                    <li class="mb-2">
+                        <span>Hỗ trợ khách hàng 24/7.</span>
+                    </li>
+                </ul>
+            </div>
+            ---
+
+            <div class="p-3 bg-light border rounded text-secondary-custom mt-4">
+                <h6 class="text-dark mb-2">Thông tin giao hàng</h6>
+                <p class="mb-0">Giao hàng miễn phí cho đơn hàng từ 1.500.000 VNĐ trở lên. Phí giao hàng áp dụng cho đơn dưới 1.500.000 VNĐ dao động từ 20.000 VNĐ - 50.000 VNĐ tùy khu vực.</p>
+            </div>
+        </div>
+    </div>
+
+    ---
+    @if (ViewBag.RandomProducts != null && ViewBag.RandomProducts.Count > 0)
+    {
+        <div class="row mt-5">
+            <div class="col-12">
+                <h5 class="section-title">Sản phẩm bạn có thể thích</h5>
+                <div class="row">
+                    @foreach (var product in ViewBag.RandomProducts)
+                    {
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-9 mb-3">
+                            <a asp-action="ChiTiet" asp-route-id="@product.MaSanPham" class="text-decoration-none d-block h-100">
+                                <div class="product-card p-3">
+                                    <div class="product-image-wrapper">
+                                        @if (!string.IsNullOrEmpty(product.HinhAnh))
+                                        {
+                                            <img src="@Url.Content(product.HinhAnh)" alt="@product.TenSanPham" class="img-fluid" loading="lazy" />
+                                        }
+                                        else
+                                        {
+                                            <img src="@Url.Content("/images/noimage.png")" alt="Không có ảnh" class="img-fluid" loading="lazy" />
+                                        }
+                                    </div>
+
+                                    <div class="product-info w-100">
+                                        <div class="product-name">
+                                            @product.TenSanPham
+                                        </div>
+                                        <div class="product-price">
+                                            @if (product.Gia > 0 && product.Gia < 100000000)
+                                            {
+                                                <span class="old-price">@((product.Gia * 1.2M).ToString("N0", new System.Globalization.CultureInfo("vi-VN"))) VND</span>
+                                            }
+                                            <span class="current-price">@product.Gia.ToString("N0", new System.Globalization.CultureInfo("vi-VN")) VND</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('SoLuong').addEventListener('input', function () {
+            let value = parseInt(this.value);
+            const min = parseInt(this.min);
+            const max = parseInt(this.max);
+
+            if (isNaN(value) || value < min) {
+                this.value = min;
+            } else if (value > max) {
+                this.value = max;
+            }
+        });
+    </script>
+}

@@ -1,0 +1,457 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NgocHiepCeilingFans.bundle.scp.css",
+      "PackagePath": "staticwebassets\\NgocHiepCeilingFans.9g1qhj2lly.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\css\\DangNhap.css",
+      "PackagePath": "staticwebassets\\css\\DangNhap.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\css\\MuaTheo.css",
+      "PackagePath": "staticwebassets\\css\\MuaTheo.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\css\\admin-tai-khoan.css",
+      "PackagePath": "staticwebassets\\css\\admin-tai-khoan.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\css\\chi-tiet.css",
+      "PackagePath": "staticwebassets\\css\\chi-tiet.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\css\\san-pham.css",
+      "PackagePath": "staticwebassets\\css\\san-pham.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\Bnaner\\Banner1.webp",
+      "PackagePath": "staticwebassets\\images\\Bnaner\\Banner1.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\Bnaner\\Banner2.webp",
+      "PackagePath": "staticwebassets\\images\\Bnaner\\Banner2.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\Bnaner\\Banner3.webp",
+      "PackagePath": "staticwebassets\\images\\Bnaner\\Banner3.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\Bnaner\\banner.jpg",
+      "PackagePath": "staticwebassets\\images\\Bnaner\\banner.jpg"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\Bnaner\\banner6.webp",
+      "PackagePath": "staticwebassets\\images\\Bnaner\\banner6.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\Logo\\Logo2.png",
+      "PackagePath": "staticwebassets\\images\\Logo\\Logo2.png"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\Logo\\Logo3.png",
+      "PackagePath": "staticwebassets\\images\\Logo\\Logo3.png"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\Logo\\logo.png",
+      "PackagePath": "staticwebassets\\images\\Logo\\logo.png"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\QuatCanhGo.webp",
+      "PackagePath": "staticwebassets\\images\\QuatCanhGo.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\06779440-57c6-4016-ad5f-76e9b0461356.jpg",
+      "PackagePath": "staticwebassets\\images\\sanpham\\06779440-57c6-4016-ad5f-76e9b0461356.jpg"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\1ae8067c-0ea3-4de7-84c5-b129e81052e0.png",
+      "PackagePath": "staticwebassets\\images\\sanpham\\1ae8067c-0ea3-4de7-84c5-b129e81052e0.png"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\27b5d70b-8fe0-48ff-9703-91d535fe2048.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\27b5d70b-8fe0-48ff-9703-91d535fe2048.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\408c6d7a-0d91-4fe9-88da-053b05f33c5a.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\408c6d7a-0d91-4fe9-88da-053b05f33c5a.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\40be89c5-afbc-455c-ad06-682b449e2948.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\40be89c5-afbc-455c-ad06-682b449e2948.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\4126eec8-881e-4c68-aecb-d0e55c11e8fd.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\4126eec8-881e-4c68-aecb-d0e55c11e8fd.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\52601f9e-a3c7-4438-b198-73bcde552170.jpg",
+      "PackagePath": "staticwebassets\\images\\sanpham\\52601f9e-a3c7-4438-b198-73bcde552170.jpg"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\5495bf0b-b134-426d-ba61-0f7aeded3a2f.png",
+      "PackagePath": "staticwebassets\\images\\sanpham\\5495bf0b-b134-426d-ba61-0f7aeded3a2f.png"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\55ce76d0-d032-4c18-93a9-e1f58d8cf916.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\55ce76d0-d032-4c18-93a9-e1f58d8cf916.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\604e4b89-0cf5-494e-a030-e8a639517b92.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\604e4b89-0cf5-494e-a030-e8a639517b92.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\6a1f19ef-2dd4-490f-b305-bc454e190e44.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\6a1f19ef-2dd4-490f-b305-bc454e190e44.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\733ae2c0-c12a-44be-a42b-c1a4bb231af4.jpg",
+      "PackagePath": "staticwebassets\\images\\sanpham\\733ae2c0-c12a-44be-a42b-c1a4bb231af4.jpg"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\80cd48c2-4a4a-4f9d-9be4-07bcf57c754e.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\80cd48c2-4a4a-4f9d-9be4-07bcf57c754e.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\816c49e1-f1a8-4ddf-b11c-5e57dfbe3670.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\816c49e1-f1a8-4ddf-b11c-5e57dfbe3670.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\81aed4cd-6016-4651-9d5b-0f92e019a45f.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\81aed4cd-6016-4651-9d5b-0f92e019a45f.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\822f21d3-fc91-408d-acda-3f0908347093.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\822f21d3-fc91-408d-acda-3f0908347093.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\QuatCaoCap.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\QuatCaoCap.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\QuatHienDai.jpg",
+      "PackagePath": "staticwebassets\\images\\sanpham\\QuatHienDai.jpg"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\QuatTietKiem.jpg",
+      "PackagePath": "staticwebassets\\images\\sanpham\\QuatTietKiem.jpg"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\Quatdentrum.jpg",
+      "PackagePath": "staticwebassets\\images\\sanpham\\Quatdentrum.jpg"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\a12992d3-2418-4bd6-818d-03f4c7000633.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\a12992d3-2418-4bd6-818d-03f4c7000633.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\c7a362b9-d8ec-4246-a26f-409a4df8f280.jpg",
+      "PackagePath": "staticwebassets\\images\\sanpham\\c7a362b9-d8ec-4246-a26f-409a4df8f280.jpg"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\coden.jpg",
+      "PackagePath": "staticwebassets\\images\\sanpham\\coden.jpg"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\d2bee0cb-6212-4807-ad4b-422b61c88353.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\d2bee0cb-6212-4807-ad4b-422b61c88353.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\e404c8d7-e22c-4441-892a-654ea848f4f7.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\e404c8d7-e22c-4441-892a-654ea848f4f7.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\edf02234-2d97-4fc0-9316-fe623e83bbd3.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\edf02234-2d97-4fc0-9316-fe623e83bbd3.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\f2ce7bc6-08af-4e18-b6c7-692a1df1191f.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\f2ce7bc6-08af-4e18-b6c7-692a1df1191f.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\f450b527-bd7e-4917-b88b-6ad19450f683.jpg",
+      "PackagePath": "staticwebassets\\images\\sanpham\\f450b527-bd7e-4917-b88b-6ad19450f683.jpg"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\quatHienDai1.webp",
+      "PackagePath": "staticwebassets\\images\\sanpham\\quatHienDai1.webp"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\quatgiaucanh.jpg",
+      "PackagePath": "staticwebassets\\images\\sanpham\\quatgiaucanh.jpg"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\thongminh.jpg",
+      "PackagePath": "staticwebassets\\images\\sanpham\\thongminh.jpg"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\images\\sanpham\\trucdai.jpg",
+      "PackagePath": "staticwebassets\\images\\sanpham\\trucdai.jpg"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Ky3Nam2\\BackEnd\\BaiTapLon\\BaiTapLon\\NgocHiepCeilingFans\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.NgocHiepCeilingFans.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.NgocHiepCeilingFans.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.NgocHiepCeilingFans.props",
+      "PackagePath": "build\\NgocHiepCeilingFans.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.NgocHiepCeilingFans.props",
+      "PackagePath": "buildMultiTargeting\\NgocHiepCeilingFans.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.NgocHiepCeilingFans.props",
+      "PackagePath": "buildTransitive\\NgocHiepCeilingFans.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,36 @@
+﻿@model TaiKhoan
+
+@{
+    ViewData["Title"] = "Gắn quyền tài khoản";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/admin-tai-khoan.css" />
+
+<style>
+    body {
+        margin-top: 100px;
+    }
+
+    h2 {
+        color: #333;
+        font-weight: 300;
+    }
+
+</style>
+<h2>Gắn quyền cho tài khoản: @Model.TenDangNhap</h2>
+
+<form method="post" asp-action="GanQuyen" asp-route-id="@Model.Id">
+    <div class="mb-3">
+        <label for="VaiTro">Vai trò</label>
+        <select asp-for="VaiTro" class="form-control" id="VaiTro" name="VaiTro">
+            <option value="">-- Chọn vai trò --</option>
+            <option value="Admin" selected="@(Model.VaiTro == "Admin" ? "selected" : "")">Admin</option>
+            <option value="User" selected="@(Model.VaiTro == "User" ? "selected" : "")">User</option>
+        </select>
+        <span asp-validation-for="VaiTro" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Lưu</button>
+    <a asp-action="DanhSach" class="btn btn-secondary">Hủy</a>
+</form>
+

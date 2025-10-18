@@ -1,0 +1,61 @@
+﻿@model IEnumerable<TaiKhoan>
+
+@{
+    ViewData["Title"] = "Quản lý tài khoản";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/admin-tai-khoan.css" />
+
+<style>
+    body {
+       
+        margin-top: 100px;
+    }
+
+    h2 {
+        color: #333;
+        font-weight: 300;
+    }
+
+
+</style>
+@if (TempData["ThongBao"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["ThongBao"]
+    </div>
+}
+<h2>Danh sách tài khoản </h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Tên đăng nhập</th>
+            <th>Email</th>
+            <th>Vai trò</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tk in Model)
+        {
+            <tr>
+                <td>@tk.Id</td>
+                <td>@tk.TenDangNhap</td>
+                <td>@tk.Email</td>
+                <td>@tk.VaiTro</td>
+                <td>
+                    <a asp-action="GanQuyen" asp-route-id="@tk.Id" class="btn btn-primary btn-sm">Gắn quyền</a>
+
+                    <form asp-action="XoaTaiKhoan" asp-controller="TaiKhoan" method="post"
+                          asp-route-id="@tk.Id" style="display:inline-block"
+                          onsubmit="return confirm('Bạn có chắc muốn xóa tài khoản này?');">
+                        <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

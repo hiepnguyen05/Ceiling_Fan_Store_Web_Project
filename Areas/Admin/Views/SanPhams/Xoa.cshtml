@@ -1,0 +1,52 @@
+﻿@model NgocHiepCeilingFans.Models.SanPham
+
+@{
+    ViewData["Title"] = "Xóa Sản Phẩm";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-danger text-white">
+            <h2 class="mb-0">Xác nhận xóa sản phẩm</h2>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-danger" role="alert">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <strong>Cảnh báo!</strong> Bạn có chắc chắn muốn xóa sản phẩm này? Thao tác này không thể hoàn tác.
+            </div>
+
+            <h5 class="mt-4">Thông tin sản phẩm sẽ bị xóa:</h5>
+            <dl class="row">
+                <dt class="col-sm-3">Tên sản phẩm:</dt>
+                <dd class="col-sm-9">@Model.TenSanPham</dd>
+
+                <dt class="col-sm-3">Mã sản phẩm:</dt>
+                <dd class="col-sm-9">@Model.MaSanPham</dd>
+
+                <dt class="col-sm-3">Thương hiệu:</dt>
+                <dd class="col-sm-9">@Model.ThuongHieu</dd>
+
+                <dt class="col-sm-3">Giá:</dt>
+                <dd class="col-sm-9">@Model.Gia.ToString("N0") VNĐ</dd>
+
+                @if (!string.IsNullOrEmpty(Model.HinhAnh))
+                {
+                    <dt class="col-sm-3">Hình ảnh:</dt>
+                    <dd class="col-sm-9">
+                        <img src="@Model.HinhAnh" alt="Hình ảnh sản phẩm" class="img-thumbnail" style="max-width: 150px;" />
+                    </dd>
+                }
+            </dl>
+
+            <form asp-action="XacNhanXoa" method="post" class="mt-4">
+                <input type="hidden" asp-for="MaSanPham" />
+                <button type="submit" class="btn btn-danger me-2">
+                    <i class="bi bi-trash"></i> Xác nhận xóa
+                </button>
+                <a asp-action="DanhSach" class="btn btn-secondary">
+                    <i class="bi bi-x-circle"></i> Hủy bỏ
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

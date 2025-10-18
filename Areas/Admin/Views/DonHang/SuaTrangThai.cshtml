@@ -1,0 +1,46 @@
+﻿@model NgocHiepCeilingFans.Models.DonHang
+
+@{
+    ViewData["Title"] = "Sửa Trạng Thái Đơn Hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+
+    body {
+        font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        color: #333;
+        background-color: #f8f9fa;
+        margin-top: 140px;
+    }
+
+</style>
+
+<h2>Sửa Trạng Thái Đơn Hàng #@Model.Id</h2>
+
+@if (TempData["Loi"] != null)
+{
+    <div class="alert alert-danger">@TempData["Loi"]</div>
+}
+
+<form asp-area="Admin" asp-controller="DonHang" asp-action="SuaTrangThai" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label for="currentStatus" class="form-label">Trạng Thái Hiện Tại:</label>
+        <input type="text" class="form-control" id="currentStatus" value="@Model.TrangThai" readonly />
+    </div>
+
+    <div class="mb-3">
+        <label for="TrangThaiMoi" class="form-label">Trạng Thái Mới:</label>
+        <select class="form-select" id="TrangThaiMoi" name="TrangThaiMoi" asp-for="TrangThai">
+            <option value="Chờ Xử Lý">Chờ Xử Lý</option>
+            <option value="Đang Xử Lý">Đang Xử Lý</option>
+            <option value="Đang Giao Hàng">Đang Giao Hàng</option>
+            <option value="Đã Hoàn Thành">Đã Hoàn Thành</option>
+            <option value="Đã Hủy">Đã Hủy</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cập Nhật Trạng Thái</button>
+    <a asp-area="Admin" asp-controller="DonHang" asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

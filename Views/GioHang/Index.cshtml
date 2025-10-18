@@ -1,0 +1,112 @@
+﻿@model List<NgocHiepCeilingFans.Models.GioHang>
+
+@{
+    ViewData["Title"] = "Giỏ Hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.AntiForgeryToken()
+
+<style>
+    body {
+        margin-top: 150px;
+    }
+
+    h2 {
+        color: #333;
+        font-weight: 300;
+    }
+
+    .btn-outline-custom {
+        border: 1px solid #333;
+        color: #333;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+        border-radius: 4px;
+    }
+
+        .btn-outline-custom:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            color: #000;
+            border-color: #000;
+        }
+</style>
+
+<h2>Giỏ Hàng</h2>
+
+@if (TempData["ThanhCong"] != null)
+{
+    <div class="alert alert-success">@TempData["ThanhCong"]</div>
+}
+@if (TempData["Loi"] != null)
+{
+    <div class="alert alert-danger">@TempData["Loi"]</div>
+}
+
+@if (Model.Any())
+{
+    <form id="gioHangForm" method="get" action="@Url.Action("DatHang", "GioHang")">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Chọn</th>
+                    <th>Hình Ảnh</th>
+                    <th>Sản Phẩm</th>
+                    <th>Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Tổng</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td><input type="checkbox" name="danhSachSanPham" value="@item.MaSanPham" /></td>
+                        <td>
+                            <img src="@(item.HinhAnh ?? "~/images/noimage.png")" alt="@item.TenSanPham" style="width: 50px;" />
+                        </td>
+                        <td>@item.TenSanPham</td>
+                        <td>@item.Gia.ToString("N0") VNĐ</td>
+                        <td>@item.SoLuong</td>
+                        <td>@((item.Gia * item.SoLuong).ToString("N0")) VNĐ</td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-outline-custom" onclick="deleteItem('@item.MaSanPham')">Xóa</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <button type="submit" class="btn btn-primary">Đặt Hàng</button>
+    </form>
+}
+else
+{
+    <p>Giỏ hàng trống.</p>
+}
+
+@section Scripts {
+    <script>
+        document.getElementById("gioHangForm").addEventListener("submit", e => {
+            if (!document.querySelector('input[name="danhSachSanPham"]:checked')) {
+                e.preventDefault();
+                alert("Vui lòng chọn ít nhất một sản phẩm.");
+            }
+        });
+
+        function deleteItem(maSanPham) {
+            if (confirm("Bạn có chắc chắn muốn xóa sản phẩm này?")) {
+                fetch('@Url.Action("Xoa", "GioHang")', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                    },
+                    body: `maSanPham=${encodeURIComponent(maSanPham)}`
+                })
+                .then(res => res.ok ? window.location.reload() : res.text().then(text => { throw new Error(text || "Lỗi không xác định"); }))
+                .catch(err => alert("Lỗi khi xóa: " + err.message));
+            }
+        }
+    </script>
+}

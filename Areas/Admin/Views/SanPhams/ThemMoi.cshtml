@@ -1,0 +1,95 @@
+﻿@model NgocHiepCeilingFans.Models.SanPham
+
+@{
+    ViewData["Title"] = "Thêm Sản Phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+
+    body {
+        margin-top: 50px;
+    }
+</style>
+<h2>Thêm Sản Phẩm</h2>
+
+<form asp-action="ThemMoi" method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="TenSanPham"></label>
+        <input asp-for="TenSanPham" class="form-control" />
+        <span asp-validation-for="TenSanPham" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="MoTa"></label>
+        <textarea asp-for="MoTa" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="MoTa" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Gia"></label>
+        <input asp-for="Gia" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="Gia" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label>Hình ảnh</label>
+        <input type="file" name="imageFile" class="form-control" accept="image/*" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ThuongHieu"></label>
+        <select asp-for="ThuongHieu" class="form-control" asp-items="ViewBag.ThuongHieuList">
+            <option value="">Chọn</option>
+        </select>
+        <span asp-validation-for="ThuongHieu" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="LoaiQuat"></label>
+        <select asp-for="LoaiQuat" class="form-control" asp-items="ViewBag.LoaiQuatList">
+            <option value="">Chọn</option>
+        </select>
+        <span asp-validation-for="LoaiQuat" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="SoCanh"></label>
+        <select asp-for="SoCanh" class="form-control" asp-items="ViewBag.SoCanhList">
+            <option value="">Chọn</option>
+        </select>
+        <span asp-validation-for="SoCanh" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="MauSac"></label>
+        <select asp-for="MauSac" class="form-control" asp-items="ViewBag.MauSacList">
+            <option value="">Chọn</option>
+        </select>
+        <span asp-validation-for="MauSac" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 form-check">
+        <input asp-for="CoDen" class="form-check-input" type="checkbox" />
+        <label asp-for="CoDen"></label>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="BaoHanh"></label>
+        <input asp-for="BaoHanh" class="form-control" type="number" />
+        <span asp-validation-for="BaoHanh" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="SoLuongTon"></label>
+        <input asp-for="SoLuongTon" class="form-control" type="number" />
+        <span asp-validation-for="SoLuongTon" class="text-danger"></span>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Thêm</button>
+        <a asp-action="DanhSach" class="btn btn-secondary">Quay lại</a>
+    </div>
+</form>
+

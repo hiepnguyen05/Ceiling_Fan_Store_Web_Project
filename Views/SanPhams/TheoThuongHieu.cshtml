@@ -1,0 +1,77 @@
+﻿@model List<NgocHiepCeilingFans.Models.SanPham>
+
+<link rel="stylesheet" href="~/css/MuaTheo.css" />
+@if (string.IsNullOrEmpty(ViewBag.ThuongHieu))
+{
+    <p class="featured-title">Mua sắm theo thương hiệu</p>
+
+    <div class="collection-section">
+        <div class="collection-row brand-logo-grid">
+            @{
+                var brandLogos = new List<(string Ten, string Logo)>
+        {
+        ("Panasonic", "https://i.pinimg.com/736x/87/45/28/8745287b40ac1b5eb1761fdbd9473f2a.jpg"),
+        ("KDK", "https://t3.ftcdn.net/jpg/04/65/20/82/360_F_465208218_iemZCYmzat6YAJpJtoy0JMiQQloEkNZz.jpg"),
+        ("Casablanca", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrsElmUfi4Br1HawxdemRh3LVE1nStgKDVuqcEg0NDQnbqEWyNpPyyMGkeLqvdOWN8SF4&usqp=CAU"),
+        ("Lucci Air", "https://www.lucciair.com/media/catalog/product/placeholder/websites/27/lucci_placeholder.jpg"),
+        ("Fanimation", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYlMYuJiQ-fr_CT-YrT3n5JM3z1O5PwDb0iw&s"),
+        ("Minka Aire", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSjnCkRw9ACbBvFgJ7pKd1-YuJVt28DoKmhg&s"),
+        ("Hunter", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo3qEKlWLRE1CoIjjcwvNMMs5teMQPPSsjGg&s"),
+        ("LuxuryFan", "/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBYtT7w9DSRgK3i_6EPtQp5U9VDDNMqzJP_Q&s"),
+        ("  ", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74WX_YkBCpG-XJcIks96Vnxss5SkyhiO-1g&s"),
+        ("Khác", "https://www.shutterstock.com/image-illustration/ellipsis-icon-three-dots-symbol-600nw-2481235163.jpg")
+        };
+            }
+
+            @foreach (var brand in brandLogos)
+            {
+                <a asp-controller="SanPhams" asp-action="TheoThuongHieu" asp-route-thuongHieu="@brand.Ten" class="brand-card">
+                    <img src="@Url.Content(brand.Logo)" alt="@brand.Ten" />
+                </a>
+            }
+        </div>
+    </div>
+}
+else
+{
+    <p class="featured-title">Sản phẩm của thương hiệu: @ViewBag.ThuongHieu</p>
+
+    @if (!Model.Any())
+    {
+        <h2>Không có sản phẩm nào thuộc thương hiệu này.</h2>
+    }
+    else
+    {
+        <div class="product-grid">
+            @foreach (var item in Model)
+            {
+                <div class="product-card">
+                    <a asp-controller="SanPhams" asp-action="ChiTiet" asp-route-id="@item.MaSanPham"
+                       class="text-decoration-none text-dark d-flex flex-column h-100">
+                        <div class="product-image-wrapper mb-3">
+                            @if (!string.IsNullOrEmpty(item.HinhAnh))
+                            {
+                                <img src="@Url.Content(item.HinhAnh)" alt="@item.TenSanPham" class="img-fluid" loading="lazy" />
+                            }
+                            else
+                            {
+                                <img src="@Url.Content("/images/noimage.png")" alt="Không có ảnh" class="img-fluid" loading="lazy" />
+                            }
+                        </div>
+                        <div class="product-info flex-grow-1">
+                            <div class="product-name">@Html.DisplayFor(modelItem => item.TenSanPham)</div>
+                        </div>
+                        <div class="product-price mt-2 border-top pt-2">
+                            @if (item.Gia > 0 && item.Gia < 100000000)
+                            {
+                                <span class="old-price">@((item.Gia * 1.2M).ToString("N0")) VND</span>
+                            }
+                            <strong>@item.Gia.ToString("N0") VND</strong>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    }
+}
+

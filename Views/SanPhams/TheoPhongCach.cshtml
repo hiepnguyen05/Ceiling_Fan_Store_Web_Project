@@ -1,0 +1,121 @@
+﻿@model List<NgocHiepCeilingFans.Models.SanPham>
+
+@{
+    ViewData["Title"] = "Sản phẩm theo phong cách";
+    
+}
+<link rel="stylesheet" href="~/css/MuaTheo.css" />
+
+
+@if (string.IsNullOrEmpty(ViewBag.LoaiQuat))
+{
+    <p class="featured-title">Danh sách phong cách</p>
+
+    <div class="collection-section">
+        <div class="collection-row">
+            <div class="collection-item" style="background-image: url('https://dennoithat.vn/noithathoathinh-com/2019/09/den-quat-tran-co-dien-ht-06-anh-2.jpg.webp');">
+                <div class="collection-content">
+                    <p>Quạt trần cánh gỗ tự nhiên</p>
+                    <p class="description">Khám phá các sản phẩm theo phong cách này.</p>
+                    <a asp-controller="SanPhams" asp-action="TheoPhongCach" asp-route-loaiQuat="Quạt trần cánh gỗ tự nhiên" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="collection-item" style="background-image: url('https://thegioianhsang.vn/application/upload/products/quat-tran-den-led-HP-DQ6120.jpg');">
+                <div class="collection-content">
+                    <p>Quạt trần có đèn chùm</p>
+                    <p class="description">Khám phá các sản phẩm theo phong cách này.</p>
+                    <a asp-controller="SanPhams" asp-action="TheoPhongCach" asp-route-loaiQuat="Quạt trần có đèn chùm" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="collection-item" style="background-image: url('https://denhiendai.vn/wp-content/uploads/2024/03/quat-tran-den-giau-canh-gm4249.jpeg');">
+                <div class="collection-content">
+                    <p>Quạt trần ẩn (giấu cánh)</p>
+                    <p class="description">Khám phá các sản phẩm theo phong cách này.</p>
+                    <a asp-controller="SanPhams" asp-action="TheoPhongCach" asp-route-loaiQuat="Quạt trần ẩn (giấu cánh)" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="collection-item" style="background-image: url('https://jmvsmarthome.vn/wp-content/uploads/2021/06/KSP-616-9.jpg');">
+                <div class="collection-content">
+                    <p>Quạt trần có đèn</p>
+                    <p class="description">Khám phá các sản phẩm theo phong cách này.</p>
+                    <a asp-controller="SanPhams" asp-action="TheoPhongCach" asp-route-loaiQuat="Quạt trần có đèn" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="collection-item" style="background-image: url('https://flexhouse.vn/wp-content/uploads/2025/05/Quat-tran-trang-tri-co-den-5-toc-do-quat-thong-minh-ESC310B-2.jpg');">
+                <div class="collection-content">
+                    <p>Quạt trần hiện đại</p>
+                    <p class="description">Khám phá các sản phẩm theo phong cách này.</p>
+                    <a asp-controller="SanPhams" asp-action="TheoPhongCach" asp-route-loaiQuat="Quạt trần hiện đại" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="collection-item" style="background-image: url('https://quattranmy.com/wp-content/uploads/2022/10/quat-tran-thong-minh-1.png');">
+                <div class="collection-content">
+                    <p>Quạt trần công nghệ thông minh</p>
+                    <p class="description">Khám phá các sản phẩm theo phong cách này.</p>
+                    <a asp-controller="SanPhams" asp-action="TheoPhongCach" asp-route-loaiQuat="Quạt trần công nghệ thông minh" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="collection-item" style="background-image: url('https://product.hstatic.net/200000562269/product/3_a3573470c4fe44538860c9641b399a80_master.png');">
+                <div class="collection-content">
+                    <p>Quạt trần trục dài</p>
+                    <p class="description">Khám phá các sản phẩm theo phong cách này.</p>
+                    <a asp-controller="SanPhams" asp-action="TheoPhongCach" asp-route-loaiQuat="Quạt trần trục dài" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="collection-item" style="background-image: url('/images/placeholder.jpg');">
+                <div class="collection-content">
+                    <p>Khác</p>
+                    <p class="description">Khám phá các sản phẩm theo phong cách này.</p>
+                    <a asp-controller="SanPhams" asp-action="TheoPhongCach" asp-route-loaiQuat="Khác" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p class="featured-title">Sản phẩm theo phong cách: @ViewBag.LoaiQuat</p>
+
+    @if (!Model.Any())
+    {
+        <h2>Không có sản phẩm nào thuộc phong cách này.</h2>
+    }
+    else
+    {
+        <div class="product-grid">
+            @foreach (var item in Model)
+            {
+                <div class="product-card">
+                    <a asp-controller="SanPhams" asp-action="ChiTiet" asp-route-id="@item.MaSanPham"
+                       class="text-decoration-none text-dark d-flex flex-column h-100">
+                        <div class="product-image-wrapper mb-3">
+                            @if (!string.IsNullOrEmpty(item.HinhAnh))
+                            {
+                                <img src="@Url.Content(item.HinhAnh)" alt="@item.TenSanPham" class="img-fluid" loading="lazy" />
+                            }
+                            else
+                            {
+                                <img src="@Url.Content("/images/noimage.png")" alt="Không có ảnh" class="img-fluid" loading="lazy" />
+                            }
+                        </div>
+                        <div class="product-info flex-grow-1">
+                            <div class="product-name">
+                                @Html.DisplayFor(modelItem => item.TenSanPham)
+                            </div>
+                        </div>
+                        <div class="product-price mt-2 border-top pt-2">
+                            @if (item.Gia > 0 && item.Gia < 100000000)
+                            {
+                                <span class="old-price d-block text-muted small">@((item.Gia * 1.2M).ToString("N0")) VND</span>
+                            }
+                            <strong>@item.Gia.ToString("N0") VND</strong>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    }
+}
+
+
+

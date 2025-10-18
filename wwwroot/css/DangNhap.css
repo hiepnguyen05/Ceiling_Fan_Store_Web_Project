@@ -1,0 +1,150 @@
+﻿/* Trong file wwwroot/css/DangNhap.css hoặc site.css */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    margin-top: 90px ;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.login-title {
+    font-size: 2.2rem;
+    letter-spacing: 0.15em;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 25px !important;
+    text-transform: uppercase;
+}
+
+.login-subtext {
+    font-size: 0.95rem;
+    color: #6a6a6a;
+    margin-bottom: 40px !important;
+    font-weight: 300;
+}
+
+.custom-input.form-control {
+    border: 1px solid #d4d4d4;
+    height: 45px;
+    padding: 0.5rem 0.75rem;
+    box-shadow: none;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+    .custom-input.form-control::placeholder {
+        color: #999;
+        opacity: 1;
+    }
+
+    .custom-input.form-control:focus {
+        border-color: #aaaaaa;
+        box-shadow: none;
+    }
+
+.login-button.btn {
+    background-color: #f0c26b;
+    border-color: #f0c26b;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    padding: 0.8rem 1.25rem;
+    margin-top: 30px;
+    border-radius: 0;
+}
+
+    .login-button.btn:hover {
+        background-color: #e0b05b;
+        border-color: #e0b05b;
+        color: #333;
+    }
+
+.dont-have-account {
+    font-size: 0.9rem;
+    color: #6a6a6a;
+    margin-top: 25px !important;
+    font-weight: 300;
+}
+
+.create-one-link {
+    color: #f0c26b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .create-one-link:hover {
+        color: #e0b05b;
+        text-decoration: underline;
+    }
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+
+.register-title {
+    font-size: 2.2rem;
+    letter-spacing: 0.15em;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 25px !important;
+    text-transform: uppercase;
+}
+
+.register-subtext {
+    font-size: 0.95rem;
+    color: #6a6a6a;
+    margin-bottom: 40px !important;
+    font-weight: 300;
+}
+
+.register-button.btn {
+    background-color: #f0c26b;
+    border-color: #f0c26b;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    padding: 0.8rem 1.25rem;
+    margin-top: 30px;
+    border-radius: 0;
+}
+
+.register-button.btn:hover {
+    background-color: #e0b05b;
+    border-color: #e0b05b;
+    color: #333;
+}
+
+.already-have-account {
+    font-size: 0.9rem;
+    color: #6a6a6a;
+    margin-top: 25px !important;
+    font-weight: 300;
+}
+
+.login-link {
+    color: #f0c26b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover {
+    color: #e0b05b;
+    text-decoration: underline;
+}
+
